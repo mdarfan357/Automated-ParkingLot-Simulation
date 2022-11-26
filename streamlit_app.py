@@ -57,8 +57,8 @@ output = st.session_state.func_out
 if enter:
     _left,left,l0,l1,l2, mid,_right = st.columns(7)
     with left:
-        st.image("images/g7.jpg",width=500)
-    import time
+        st.image("g7.jpg",width=500)
+#     import time
 
     my_bar = st.progress(0)
     
