@@ -1,5 +1,6 @@
 import streamlit as st
-import edgenum as en
+# import edgenum as en
+from edgenum.py import edgenum as en 
 import datetime as ts
 
 if "func_out" not in st.session_state:
