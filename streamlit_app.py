@@ -4,7 +4,7 @@ import edgenum as en
 import datetime as ts
 
 if "func_out" not in st.session_state:
-    st.session_state.func_out = en.edgenum("C:/Users/rgkul/Downloads/images/g7.jpg")
+    st.session_state.func_out = en.edgenum("g7.jpg")
 
 
 st.title("Automated Parking System using number plate detection")
