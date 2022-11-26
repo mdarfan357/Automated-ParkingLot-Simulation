@@ -1,6 +1,7 @@
 import streamlit as st
 # import edgenum as en
 import edgenum as en 
+import time
 import datetime as ts
 
 if "func_out" not in st.session_state:
@@ -58,7 +59,7 @@ if enter:
     _left,left,l0,l1,l2, mid,_right = st.columns(7)
     with left:
         st.image("g7.jpg",width=500)
-#     import time
+
 
     my_bar = st.progress(0)
     
