@@ -23,7 +23,7 @@ st_lottie(
     speed=0.75,
     reverse=False,
     loop=False,
-    quality="high", # medium ; high
+    quality="low", # medium ; high
   
     height=None,
     width=None,
