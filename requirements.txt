@@ -2,3 +2,4 @@ streamlit
 requests
 opencv-python
 flask
+streamlit_lottie
