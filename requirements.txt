@@ -4,3 +4,4 @@ opencv-python
 flask
 streamlit_lottie
 easyocr
+opencv-python-headless
