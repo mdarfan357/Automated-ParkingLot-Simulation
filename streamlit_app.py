@@ -3,6 +3,10 @@ import streamlit as st
 import edgenum as en 
 import time
 import datetime as ts
+import requests
+import json
+from streamlit_lottie import st_lottie
+
 
 if "func_out" not in st.session_state:
     st.session_state.func_out = en.edgenum("g7.jpg")
@@ -10,26 +14,26 @@ if "func_out" not in st.session_state:
 
 st.title("Automated Parking System using number plate detection")
 
-# def load_lottieurl(url):
-#   r = requests.get(url)
-#   if r.status_code != 200:
-#     return None
-#   return r.json()
+def load_lottieurl(url):
+  r = requests.get(url)
+  if r.status_code != 200:
+    return None
+  return r.json()
 
-# lottie_hello = load_lottieurl("https://assets1.lottiefiles.com/packages/lf20_khm3kzeu.json")
+lottie_hello = load_lottieurl("https://assets1.lottiefiles.com/packages/lf20_khm3kzeu.json")
             
 
-# st_lottie(
-#     lottie_hello,
-#     speed=0.75,
-#     reverse=False,
-#     loop=False,
-#     quality="low", # medium ; high
+st_lottie(
+    lottie_hello,
+    speed=0.75,
+    reverse=False,
+    loop=False,
+    quality="low", # medium ; high
   
-#     height=None,
-#     width=None,
-#     key=None,
-# )
+    height=None,
+    width=None,
+    key=None,
+)
 
 hide_streamlit_style = """
             <style>
