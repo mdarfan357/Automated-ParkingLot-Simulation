@@ -1,4 +1,5 @@
 import streamlit as st
+from flask import request
 st.title("Automated Parking System using number plate detection")
 hide_streamlit_style = """
             <style>
