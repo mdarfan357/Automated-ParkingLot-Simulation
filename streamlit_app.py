@@ -19,8 +19,14 @@ enter = st.button("Enter")
 def callback():
     st.session_state.button_clicked =True
 
-# def callback2():
-#     st.session_state.button_clicked =True
+def load_lottieurl(url):
+  r = request.get(url)
+  if r.status_code != 200:
+    return None
+  return r.json()
+
+lottie_hello = load_lottieurl("https://assets1.lottiefiles.com/packages/lf20_khm3kzeu.json")
+            
 
 
 
@@ -32,10 +38,7 @@ if enter:
     import time
 
     my_bar = st.progress(0)
-    st.info('Model is running ', icon="ℹ️")
-    for percent_complete in range(100):
-        time.sleep(0.001)
-        my_bar.progress(percent_complete + 1)
+    
     
     
 
