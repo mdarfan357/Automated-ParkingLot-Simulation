@@ -45,19 +45,13 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 if "button_clicked" not in st.session_state:
     st.session_state.button_clicked = False
-
-# if "button_clicked2" not in st.session_state:    
-#     st.session_state.button_clicked2 = False
-
+    
 enter = st.button("Enter")
 
 def callback():
     st.session_state.button_clicked =True
 
-# def callback2():
-#     st.session_state.button_clicked =True
 output = st.session_state.func_out
-# output = en.edgenum("C:/Users/rgkul/Downloads/images/g7.jpg")
 
 if enter:
     _left,left,l0,l1,l2, mid,_right = st.columns(7)
@@ -73,13 +67,10 @@ if enter:
     st.info('Vehicle entry registered, press exit to simulate vehicle exit ', icon="ℹ️")
 
 dt1 = ts.datetime(2022, 11, 26, 12, 25, 29, 674107)    
-try:
-    timedf = output[0]-dt1
-except:
-    pass
-# append_to_csv(tweet[0],tweet[1])
 
-# tweet - date time and car plate
+timedf = output[0]-dt1
+
+
 diff_in_minutes = timedf.total_seconds() / 60
 if diff_in_minutes <= 60:
     Amount = 20
@@ -89,7 +80,6 @@ elif diff_in_minutes > 120 and diff_in_minutes <= 180:
     amount = 40
 elif diff_in_minutes > 180:
     amount = 50
-# exit = st.button("Exit")
 
 if st.button("Exit",on_click=callback):
 
@@ -106,8 +96,3 @@ if st.button("Exit",on_click=callback):
         time.sleep(500)
         st.success("Payment Successful")
 
-    # accept = st.button("Accept")
-
-    # if accept:
-
-        # st.success("Payment successful")
