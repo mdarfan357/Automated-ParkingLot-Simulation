@@ -25,6 +25,7 @@ def callback():
 
 
 if enter:
+    st.write("The following is a simulation of a Automated Parking lot system using CCTV ")     
     _left,left,l0,l1,l2, mid,_right = st.columns(7)
     with left:
         st.image("Cars428.png",width=500)
