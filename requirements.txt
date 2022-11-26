@@ -5,3 +5,6 @@ flask
 streamlit_lottie
 easyocr
 opencv-python-headless
+matplotlib
+numpy
+datetime
