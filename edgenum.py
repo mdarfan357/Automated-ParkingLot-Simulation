@@ -70,17 +70,11 @@ def edgenum(impath):
     text = result[0][-2]
     if text.casefold() == "mhi2de1423":
         text == "MH 12DE 1433"
-    reslut = []
+    results = []
     tmstp = ts.datetime.now()
-    reslut.append((tmstp))
-    reslut.append(text)
-    return reslut
+    results.append((tmstp))
+    results.append(text)
+    return results
 
-# text = result[0][-2]
-# print(text)
 
-# font = cv2.FONT_HERSHEY_SIMPLEX
-# res = cv2.putText(img, text=text, org=(approx[0][0][0], approx[1][0][1]+60), fontFace=font, fontScale=1, color=(0,255,0), thickness=2, lineType=cv2.LINE_AA)
-# res = cv2.rectangle(img, tuple(approx[0][0]), tuple(approx[2][0]), (0,255,0),3)
-# plt.imshow(cv2.cvtColor(res, cv2.COLOR_BGR2RGB))
 
