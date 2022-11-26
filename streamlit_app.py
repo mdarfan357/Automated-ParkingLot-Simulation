@@ -44,7 +44,7 @@ hide_streamlit_style = """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 if "button_clicked" not in st.session_state:
-    st.session_state.button_clicked1 = False
+    st.session_state.button_clicked = False
 
 # if "button_clicked2" not in st.session_state:    
 #     st.session_state.button_clicked2 = False
