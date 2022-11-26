@@ -7,6 +7,28 @@ if "func_out" not in st.session_state:
 
 
 st.title("Automated Parking System using number plate detection")
+
+def load_lottieurl(url):
+  r = requests.get(url)
+  if r.status_code != 200:
+    return None
+  return r.json()
+
+lottie_hello = load_lottieurl("https://assets1.lottiefiles.com/packages/lf20_khm3kzeu.json")
+            
+
+st_lottie(
+    lottie_hello,
+    speed=0.75,
+    reverse=False,
+    loop=False,
+    quality="high", # medium ; high
+  
+    height=None,
+    width=None,
+    key=None,
+)
+
 hide_streamlit_style = """
             <style>
             MainMenu {visibility: hidden;}
