@@ -1,6 +1,6 @@
 streamlit 
 requests
-opencv-python
+opencv-python==4.5.5.64
 flask
 streamlit_lottie
 easyocr
