@@ -99,7 +99,7 @@ if st.button("Exit",on_click=callback):
     pay = st.button("Make payment")
     # print(pay)
     if pay:
-        time.sleep(5)
+        time.sleep(500)
         st.success("Payment Successful")
 
     # accept = st.button("Accept")
