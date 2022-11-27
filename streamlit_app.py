@@ -69,7 +69,8 @@ if enter:
         my_bar.progress(percent_complete + 1)
     st.info('Vehicle entry registered, press exit to simulate vehicle exit ', icon="ℹ️")
 
-dt1 = ts.datetime(2022, 11, 26, 12, 25, 29, 674107)    
+# dt1 = ts.datetime(2022, 11, 26, 12, 25, 29, 674107)    
+dt1 = ts.datetime(2022, 11, 27, 5, 25, 29, 674107)   
 
 timedf = output[0]-dt1
 
