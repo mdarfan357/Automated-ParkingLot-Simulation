@@ -7,7 +7,7 @@ import requests
 import json
 from streamlit_lottie import st_lottie
 # IMAGE_PATH = "g9.png" # "g7.jpg" # "g8.jpg"
-IMAGE_PATH = "g10.webp"
+IMAGE_PATH = "g11.jpg"
 
 
 if "func_out" not in st.session_state:
