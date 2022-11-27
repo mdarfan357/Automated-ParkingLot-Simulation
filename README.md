@@ -10,7 +10,7 @@ A [Streamlit](https://streamlit.io) demo demonstrating an Automated Parking lot 
 
 ```
 pip install -r requirements.txt
-streamlit run https://raw.githubusercontent.com/tvst/deepdream/master/streamlit_app.py
+streamlit run https://github.com/mdarfan357/ParkingLotSimulation
 ```
 
 ...or clone this repo and then run with:
