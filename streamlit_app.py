@@ -9,7 +9,9 @@ from streamlit_lottie import st_lottie
 
 
 if "func_out" not in st.session_state:
-    st.session_state.func_out = en.edgenum("g7.jpg")
+#     st.session_state.func_out = en.edgenum("g7.jpg")
+    st.session_state.func_out = en.edgenum("g8.jpg")
+
 
 
 st.title("Automated Parking System using number plate detection")
@@ -56,7 +58,8 @@ output = st.session_state.func_out
 if enter:
     _left,left,l0,l1,l2, mid,_right = st.columns(7)
     with left:
-        st.image("g7.jpg",width=500)
+#         st.image("g7.jpg",width=500)
+        st.image("g8.jpg",width=500)
 
 
     my_bar = st.progress(0)
