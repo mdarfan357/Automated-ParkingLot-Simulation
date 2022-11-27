@@ -4,5 +4,8 @@
 
 ## How to run this demo
 
-`pip install -r requirements.txt
-streamlit run https://raw.githubusercontent.com/tvst/deepdream/master/streamlit_app.py`
+`
+pip install -r requirements.txt
+streamlit run https://raw.githubusercontent.com/tvst/deepdream/master/streamlit_app.py
+
+`
