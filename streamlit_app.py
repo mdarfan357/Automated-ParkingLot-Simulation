@@ -6,7 +6,7 @@ import datetime as ts
 import requests
 import json
 from streamlit_lottie import st_lottie
-IMAGE_PATH = "g9.jpg"
+IMAGE_PATH = "g9.png"
 
 
 if "func_out" not in st.session_state:
