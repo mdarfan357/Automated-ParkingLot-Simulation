@@ -6,11 +6,12 @@ import datetime as ts
 import requests
 import json
 from streamlit_lottie import st_lottie
+IMAGE_PATH = "g9.jpg"
 
 
 if "func_out" not in st.session_state:
 #     st.session_state.func_out = en.edgenum("g7.jpg")
-    st.session_state.func_out = en.edgenum("g8.jpg")
+    st.session_state.func_out = en.edgenum(IMAGE_PATH)
 
 
 
@@ -59,7 +60,7 @@ if enter:
     _left,left,l0,l1,l2, mid,_right = st.columns(7)
     with left:
 #         st.image("g7.jpg",width=500)
-        st.image("g8.jpg",width=500)
+        st.image(IMAGE_PATH,width=500)
 
 
     my_bar = st.progress(0)
