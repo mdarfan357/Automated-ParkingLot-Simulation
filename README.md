@@ -1,8 +1,10 @@
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://mdarfan357-parkinglotsimulation-streamlit-app-h85j7o.streamlit.app/)
+
 # ParkingLotSimulation
 
 A [Streamlit](https://streamlit.io) demo demonstrating an Automated Parking lot system.
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://mdarfan357-parkinglotsimulation-streamlit-app-h85j7o.streamlit.app/)
+
 
 ## How to run this demo
 
