@@ -6,11 +6,10 @@ import datetime as ts
 import requests
 import json
 from streamlit_lottie import st_lottie
-IMAGE_PATH = "g9.png"
+IMAGE_PATH = "g9.png" # "g7.jpg" # "g8.jpg"
 
 
 if "func_out" not in st.session_state:
-#     st.session_state.func_out = en.edgenum("g7.jpg")
     st.session_state.func_out = en.edgenum(IMAGE_PATH)
 
 
